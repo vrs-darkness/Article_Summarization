@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212; /* Dark background color */
+    font-family: Arial, sans-serif;
+    color: #f0f0f0; /* Light text color for readability */
+    margin: 0; /* Reset default margin */
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Makes the content area grow to fill the space */
+    width: 100%;
+}
+
+.content {
+    background: #1e1e1e; /* Darker container background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+    max-width: 90%; /* Use a max-width percentage for responsive scaling */
+    width: auto; /* Set width to auto */
+    margin-bottom: 20px; /* Add margin to separate from footer */
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* White color for the title */
+}
+
+/* Switch styling */
+.switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.switch-label {
+    margin: 0 10px;
+    color: #f0f0f0; /* Light color for labels */
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.custom-control-label::before {
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Input styling */
+.forms-para {
+    display: none;
+}
+
+.form-control {
+    background-color: #333; /* Dark input background */
+    color: #f0f0f0; /* Light text for inputs */
+    border: 1px solid #444; /* Darker border */
+    min-width: 100%; /* Full width */
+    width: 100%; /* Allow text area to scale horizontally */
+    height: auto; /* Auto height for text area */
+    resize: none; /* Disable resize handle */
+    overflow: hidden; /* Hide overflow to manage text area resizing */
+}
+
+.form-control:focus {
+    background-color: #444; /* Slightly lighter background on focus */
+    border-color: #555; /* Slightly lighter border on focus */
+    color: #ffffff; /* White color for text */
+    outline: none;
+}
+
+/* Button styling */
+.btn-success {
+    background-color: #28a745; /* Bootstrap green */
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #121212; /* Match the body background */
+    width: 100%;
+    color: #f0f0f0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .heart {
+    color: #ff4d4d; /* Red color for heart */
+}
