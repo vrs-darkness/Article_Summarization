@@ -32,7 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const copyButton = document.getElementById('copyButton');
     copyButton.addEventListener('click', function () {
         const textToCopy = typingContentElement.textContent;
+        // console.log("hello")
         navigator.clipboard.writeText(textToCopy).then(function () {
+            // console.log("hello")
             alert('Summary copied to clipboard!');
         }).catch(function (error) {
             console.error('Failed to copy text: ', error);
